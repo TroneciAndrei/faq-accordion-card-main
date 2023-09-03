@@ -1,0 +1,106 @@
+/* General Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 20px;
+}
+
+/* Illustrations styling */
+
+.illustration {
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  left: -42px;
+  top: 122px;
+}
+
+/* FAQ Container */
+
+.faq {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.faq,
+h1,
+.question {
+  margin-bottom: 20px;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding-bottom: 26px;
+}
+
+.question p:hover {
+  color: hsl(14, 88%, 65%);
+  transition: color 0.2s linear;
+}
+
+.answer {
+  display: block;
+  padding-bottom: 26px;
+}
+
+/* hide answers */
+.hide {
+  display: none;
+}
+
+/* Rotate Arrow */
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.5s linear;
+}
+
+/* Mobile Syle */
+@media screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .woman {
+    width: 100%;
+    position: RELATIVE;
+    top: -90px;
+  }
+
+  .box {
+    position: absolute;
+    left: -30px;
+    top: -21px;
+    width: 50%;
+  }
+
+  .faq {
+    width: 100%;
+  }
+}
